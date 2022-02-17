@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_flutter/model/video_model.dart';
+import 'package:project_flutter/screens/video_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,6 +10,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  //Essa é a criação de vídeos de exemplo
   List<VideoModel> items = [
     VideoModel(
       "https://i.ytimg.com/vi/6AI-gFM8gco/maxresdefault.jpg",
@@ -145,6 +147,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 const SizedBox(
                   height: 16,
                 ),
+                videoCard(items[0]),
+                videoCard(items[1]),
+                videoCard(items[2]),
               ],
             ),
           ),
