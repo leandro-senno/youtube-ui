@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_flutter/model/video_model.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -8,6 +9,36 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  List<VideoModel> items = [
+    VideoModel(
+      "https://i.ytimg.com/vi/6AI-gFM8gco/maxresdefault.jpg",
+      "check in & mern ecommerce course release",
+      "13:14",
+      "https://yt3.ggpht.com/ytc/AKedOLSxHOOxxa9Af8Bfb2XMop3lm4tor9bViWiC-d5aaw=s176-c-k-c0x00ffffff-no-rj-mo",
+      "Traversy Media",
+      "91k views",
+      "Sep 30, 2020",
+    ),
+    VideoModel(
+      "https://i.ytimg.com/vi/lHhRhPV--G0/maxresdefault.jpg",
+      "Construa um player de musica usando flutter",
+      "39:17",
+      "https://yt3.ggpht.com/JPKP2DEKZIGK9tsW2klYUyaN9Lm8OXGdOVKKas9jmLRerzVUqmOC94rI9-bnTp65IVTIBhykkA=s176-c-k-c0x00ffffff-no-rj-mo",
+      "Doctor Code",
+      "18.8k views",
+      "Mar 28, 2022",
+    ),
+    VideoModel(
+      "https://i.ytimg.com/vi/TaiOPM4oeyY/maxresdefault.jpg",
+      "Flutter em 100 segundos",
+      "2:00",
+      "https://yt3.ggpht.com/ytc/AKedOLTcIl6kKt3lEPJEySUf_hpHiKDKiFeo9eWPReLysQ=s176-c-k-c0x00ffffff-no-rj-mo",
+      "Fireship",
+      "442k views",
+      "Apr 14, 2022",
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -146,24 +177,3 @@ class _HomeScreenState extends State<HomeScreen> {
         ));
   }
 }
-
-/*
-Container(
-        height: 60,
-        color: Colors.white,
-        child: InkWell(
-          onTap: () {},
-          child: Padding(
-            padding: const EdgeInsets.only(top: 8),
-            child: Column(
-              children: [
-                Icon(
-                  Icons.close,
-                ),
-                Text('close'),
-              ],
-            ),
-          ),
-        ),
-      ),
-*/
